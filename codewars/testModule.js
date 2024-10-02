@@ -18,12 +18,12 @@ export function assertDeepEquals(uut, expected) {
         }
     }
 }
-export function assertNumberEquals(uut, expected){
+export function assertEquals(uut, expected){
     const failureMessage = `Expected: ${expected}
                             You gave: ${uut}`
     if(uut !== expected){
         console.log(failureMessage)
         return
     }
-    
+
 }
