@@ -1,5 +1,8 @@
 function spoonerize(words) {
-    return words.replace(/^(.)(.* )(.)(.*)$/, '$3$2$1$4')
+    wordsArr = words.split(" ")
+    return [wordsArr[1].charAt(0) + wordsArr[0].slice(1),
+        wordsArr[0].charAt(0) + wordsArr[1].slice(1)]
+            .join(" ")
 }
 ////tests - nothing logged means all tests passed
 function assertEq(w1, w2, fn) {
