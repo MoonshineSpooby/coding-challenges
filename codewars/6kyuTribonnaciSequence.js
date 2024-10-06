@@ -14,6 +14,7 @@ function tribonnaci(signature, n) {
     }
     return signature
 }
+
 ////tests - nothing logged means all tests passed
 function assertEqArr(input, expected, rtn) {
     const errMsg = `test for ${input} failed. You gave me ${rtn} but I need ${expected}`
