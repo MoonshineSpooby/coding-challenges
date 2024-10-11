@@ -12,5 +12,7 @@ function dnaStrand(dna){
         dnaComplement += dnaDictionary[element]
     });
     return dnaComplement
-  }
-  assertDeepEquals(dnaStrand("ATCG"), "TAGC")
+}
+
+assertDeepEquals(dnaStrand("ATCG"), "TAGC")
+assertDeepEquals(dnaStrand("GGGG"), "CCCC")
