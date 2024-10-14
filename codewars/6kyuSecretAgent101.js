@@ -12,11 +12,12 @@ function encrypt(passcode) {
     passcode.split("")
             
     for(let i = 0; i < 9; i++)
-        if(passcode[i].charCodeAt(0) < 97 || passcode[i].charCodeAt(0) > 122)
-            return "BANG!";
-        passcode[i] = passcode.charCodeAt(i) - 96 ? i == 1 || i == 3
-        passcode[i] = 
+        if(passcode[i].charCodeAt(0) < 97 || passcode[i].charCodeAt(0) > 122){
+          return "BANG!";
+        }            
+        return
   }
+
   
   //Section 2: Decryption
   var validPasscodes = passcodes; // Do not change this! Only the boss knows all the passcodes,
